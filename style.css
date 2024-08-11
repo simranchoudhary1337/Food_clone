@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+#navbar{
+    height: 70px;
+   display: flex;
+   align-items: center;
+   top: 0px;
+   position: sticky;
+}
+
+#logo{
+    margin:10px;
+}
+
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+
+#navbar ul{
+    display: flex;
+    font-style: bold;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    top: 0px;
+    left: 0px;
+
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+/* for hover effect on one element */
+#navbar ul li a{
+    color: black;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* home section */
+#home{
+    display: flex;
+    height: 560px;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3px 200px;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    background: url("background\ 1st.jpg") no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+    opacity: 0.80;
+
+}
+
+#home h1{
+    color: black;
+    text-align: center;
+    font-style: italic;
+}
+
+#home p{
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+    
+}
+/* service section */
+
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    padding: 24px;
+    margin: -20px 6px;
+    border-radius: 28px;
+    background-color: #bdbab2;
+    margin-bottom: -2px;
+
+}
+#services .box img{
+    height: 180px;
+    margin: auto;
+    display: block;
+}
+#services .box p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/* utility classes */
+.h-primary{
+    font-size: 2.5rem;
+    padding: 12px;
+}
+.h-secondary{
+    font-size: 2.0rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 12px;
+}
+.btn{
+    padding: 6px 20px;
+    background-color: #0f0f0f;
+    margin: 17px;
+    color: white;
+    border: 2px solid black;
+    font-size: 1.0rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+
+#last-section{
+    display: flex;
+    justify-content: center;
+    background-color: #9c7e7e;
+
+}
+.last{
+    display: flex;
+    justify-content: center;
+    background-color: #7e7474;
+    height: 500px;
+    margin-bottom: 15px;
+}
+.content ul{
+    color: white;
+    font-size: 2.0rem;
+    margin-top: 20px;
+    
+}
+.button{
+        padding: 6px 20px;
+        background-color: white;
+        margin: 15px;
+        color: black;
+        border: 2px solid black;
+        font-size: 1.0rem;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+#client-section{
+     height: 300px;
+}
+
+#clients{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: -20px;
+}
+
+.client-item{
+    padding: 50px;
+}
+
+#clients img{
+    height: 100px;
+    padding: auto;
+}
+
+footer{
+    background-color: #3e6568;
+    color: white;
+    padding: 9px 20px;
+}
